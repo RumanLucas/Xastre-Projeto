@@ -1,7 +1,7 @@
 @extends('layout.main')
 
 @section('title', $curso->name)
-    
+
 @section('content')
 
 <div class="col-md-10 offset-md-1">
@@ -16,7 +16,7 @@
        <p class="curso-alunosqtd"><ion-icon name="people-outline"></ion-icon> Alunos Matriculados: $curso->alunosqtdM / {{ $curso->alunosqtd}}</p>
        <p class="curso-alunosqtd"><ion-icon name="people-outline"></ion-icon> Alunos Máximos: {{ $curso->alunosqtd}}</p>
        <p class="curso-alunosqtd"><ion-icon name="people-outline"></ion-icon> Status: Matrículas Abertas/Mínimo de alunos não atingido!/Matrículas Abertas - Curso acontecerá!/Matrículas Encerradas</p>
-       <p class="curso-alunosqtd"><ion-icon name="people-outline"></ion-icon> Professor: </p>  
+       <p class="curso-alunosqtd"><ion-icon name="people-outline"></ion-icon> Professor: {{$curso->id_professor}}</p>
         <a href="#" class="btn btn-primary" id="curso-submit">Encerrar Matriculas</a>
       </div>
       <div class="col-md-12" id="description-container">
@@ -26,4 +26,4 @@
     </div>
   </div>
 
-@endsection 
+@endsection
